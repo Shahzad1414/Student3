@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var dom = document.getElementById("barchart");
+    var dom = document.getElementById("linechart");
     var myChart = echarts.init(dom);
     var app = {};
 
@@ -42,6 +42,7 @@ $(document).ready(function() {
                             option = {
                                 xAxis: {
                                     type: 'category',
+                                    boundaryGap: false,
                                     data: data.map(item => item.date_time.slice(11, 19))
                                         // [r.date_time.slice(11, 19)]
                                 },
@@ -50,7 +51,8 @@ $(document).ready(function() {
                                 },
                                 series: [{
                                     data: data.map(item => item.wind_direction),
-                                    type: 'bar'
+                                    type: 'line',
+                                    areaStyle: {}
                                 }]
                             };
 
@@ -98,6 +100,7 @@ $(document).ready(function() {
                         option = {
                             xAxis: {
                                 type: 'category',
+                                boundaryGap: false,
                                 data: data.map(item => item.date_time.slice(11, 19))
                                     // [r.date_time.slice(11, 19)]
                             },
@@ -106,7 +109,8 @@ $(document).ready(function() {
                             },
                             series: [{
                                 data: data.map(item => item.wind_direction),
-                                type: 'bar'
+                                type: 'line',
+                                areaStyle: {}
                             }]
                         };
 
@@ -155,6 +159,7 @@ $(document).ready(function() {
                         option = {
                             xAxis: {
                                 type: 'category',
+                                boundaryGap: false,
                                 data: data.map(item => item.date_time.slice(11, 19))
                                     // [r.date_time.slice(11, 19)]
                             },
@@ -163,7 +168,8 @@ $(document).ready(function() {
                             },
                             series: [{
                                 data: data.map(item => item.wind_direction),
-                                type: 'bar'
+                                type: 'line',
+                                areaStyle: {}
                             }]
                         };
 
@@ -212,6 +218,7 @@ $(document).ready(function() {
                         option = {
                             xAxis: {
                                 type: 'category',
+                                boundaryGap: false,
                                 data: data.map(item => item.date_time.slice(11, 19))
                                     // [r.date_time.slice(11, 19)]
                             },
@@ -220,7 +227,8 @@ $(document).ready(function() {
                             },
                             series: [{
                                 data: data.map(item => item.wind_direction),
-                                type: 'bar'
+                                type: 'line',
+                                areaStyle: {}
                             }]
                         };
 
@@ -270,6 +278,7 @@ $(document).ready(function() {
                         option = {
                             xAxis: {
                                 type: 'category',
+                                boundaryGap: false,
                                 data: data.map(item => item.date_time.slice(11, 19))
                                     // [r.date_time.slice(11, 19)]
                             },
@@ -278,15 +287,14 @@ $(document).ready(function() {
                             },
                             series: [{
                                 data: data.map(item => item.wind_direction),
-                                type: 'bar'
+                                type: 'line',
+                                areaStyle: {}
                             }]
                         };
 
                         if (option && typeof option === 'object') {
                             myChart.setOption(option);
                         }
-
-
                     }
                     tablebody = $("#content_1 #View4Tbl");
                     tablebody.append(tab);
@@ -327,6 +335,7 @@ $(document).ready(function() {
                         option = {
                             xAxis: {
                                 type: 'category',
+                                boundaryGap: false,
                                 data: data.map(item => item.date_time.slice(11, 19))
                                     // [r.date_time.slice(11, 19)]
                             },
@@ -335,7 +344,8 @@ $(document).ready(function() {
                             },
                             series: [{
                                 data: data.map(item => item.wind_direction),
-                                type: 'bar'
+                                type: 'line',
+                                areaStyle: {}
                             }]
                         };
 
