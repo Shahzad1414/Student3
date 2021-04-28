@@ -63,6 +63,8 @@
           <option value="view4_Measurements_2">wind_speed</option>
           <option value="view4_Measurements_3">light</option>
           <option value="view4_Measurements_3">temperature</option>
+          <option value="view4_Measurements_3">wind_direction</option>
+          
 <select>
 
 <select id="view4_timeinterval">
@@ -77,6 +79,8 @@
         <div id="view4_content_1">
         
             <h1 id="view4_heading"></h1>
+            <input type="text" id="searchFiltr" placeholder="Search" style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px;" />
+       
              <table id="View4Tbl" class="Tabuler"></table>
              <div id="view4_linechart" style="height: 500%;"></div>   
         </div>
@@ -95,6 +99,16 @@
 }
     
 window.onload = init;
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#searchFiltr").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#View4Tbl tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
     </script>
 </body>
 

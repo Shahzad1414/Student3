@@ -69,6 +69,8 @@
                   
                           <div id="content_1">
                       <h1 id="heading"></h1>
+                      <input type="text" id="searchFiltr" placeholder="Search" style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px;" />
+       
                        <table id="View2Tbl" class="Tabuler"></table>
                        <div id="view2_barchart" style="height: 500%;"></div>   
                   </div>
@@ -90,6 +92,16 @@
 }
     
 window.onload = init;
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#searchFiltr").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#View2Tbl tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
     </script>
 </body>
 

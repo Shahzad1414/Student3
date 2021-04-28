@@ -75,6 +75,14 @@ select {
     height: 50px;
 }
 
+#searchFiltr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+}
+
 *,
 *::before,
 *::after {
@@ -296,6 +304,7 @@ h6 {
     padding-left: 25%;
     font-size: 1.2rem;
 }
+
 
 /* .tm-nav-item.current .tm-nav-link,
 .tm-nav-link:hover {
