@@ -11,7 +11,7 @@ $(document).ready(function() {
         type: 'GET',
         success: function(data) {
             $("#view3_content_1 #View3Tbl").empty();
-            $("#heading").text("latest 20 measurements and Types");
+            $("#heading").text("latest 50 measurements and Types");
 
             let tab =
                 `<tr>
@@ -25,7 +25,7 @@ $(document).ready(function() {
             for (let r of data) {
 
                 count = count + 1;
-                if (count <= 20) {
+                if (count <= 50) {
                     tab += `<tr> 
                             <td>${count} </td>
                             <td>${r.date_time.slice(0,10)}</td> 
@@ -73,7 +73,7 @@ $(document).ready(function() {
                 type: 'GET',
                 success: function(data) {
                     $("#view3_content_1 #View3Tbl").empty();
-                    $("#heading").text("latest 20 measurments an types");
+                    $("#heading").text("latest 50 measurments an types");
 
                     let tab =
                         `<tr>
@@ -87,7 +87,7 @@ $(document).ready(function() {
                     for (let r of data) {
 
                         count = count + 1;
-                        if (count <= 20) {
+                        if (count <= 50) {
                             tab += `<tr> 
                                     <td>${count} </td>
                                     <td>${r.date_time.slice(0,10)}</td> 

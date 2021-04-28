@@ -53,20 +53,41 @@
                 </nav>
             </div>
         </div>
-        <section class="tm-mb-1" id="View1">
+        <section class="tm-bg-color-5 tm-mb-3" id="View4">
+            <h1 class="w3-wide">Four Different Weathers Type and Values</h1>
+      <p>Please Select Weather and Time Intervals</p>
+      
+      <div class="w3-row">
+        <select id="view4_Measurements">
+          <option value="view4_Measurements_1">rain</option>
+          <option value="view4_Measurements_2">wind_speed</option>
+          <option value="view4_Measurements_3">light</option>
+          <option value="view4_Measurements_3">temperature</option>
+<select>
 
-            <h1>50 Measurements types and values</h1>
+<select id="view4_timeinterval">
+          <option value="view4_timeinterval_1">Now</option>
+          <option value="view4_timeinterval_2">24 hours</option>
+          <option value="view4_timeinterval_3">48 hours</option>
+          <option value="view4_timeinterval_4">72 hours</option>
+          <option value="view4_timeinterval_5">1 week</option>
+          <option value="view4_timeinterval_6">1 month</option>
+<select>
 
-            <table id="view1tbl" class="Tabuler"></table>
+        <div id="view4_content_1">
+        
+            <h1 id="view4_heading"></h1>
+             <table id="View4Tbl" class="Tabuler"></table>
+             <div id="view4_linechart" style="height: 500%;"></div>   
+        </div>
 
 
         </section>
 
 
     </div>
-    
 
-    <script src="./js/Script.js"></script>
+    <script src="./js/script4.js"></script>
 </body>
 
 </html>

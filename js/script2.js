@@ -11,7 +11,7 @@ $(document).ready(function() {
         type: 'GET',
         success: function(data) {
             $("#content_1 #View2Tbl").empty();
-            $("#heading").text("The latest 20 measurements");
+            $("#heading").text("The latest 50 measurements");
             let tab =
                 `<tr>
                     <th>Row_Number</th>
@@ -24,7 +24,7 @@ $(document).ready(function() {
             for (let r of data) {
 
                 count = count + 1;
-                if (count <= 20) {
+                if (count <= 50) {
                     tab += `<tr> 
                     <td>${count} </td>
                     <td>${r.date_time.slice(0,10)}</td> 
@@ -72,7 +72,7 @@ $(document).ready(function() {
                 type: 'GET',
                 success: function(data) {
                     $("#content_1 #View2Tbl").empty();
-                    $("#heading").text("The latest 20 measurements");
+                    $("#heading").text("The latest 50 measurements");
                     let tab =
                         `<tr>
                                     <th>Row_Number</th>
@@ -85,7 +85,7 @@ $(document).ready(function() {
                     for (let r of data) {
 
                         count = count + 1;
-                        if (count <= 20) {
+                        if (count <= 50) {
                             tab += `<tr> 
                                     <td>${count} </td>
                                     <td>${r.date_time.slice(0,10)}</td> 

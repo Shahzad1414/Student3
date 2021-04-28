@@ -297,11 +297,11 @@ h6 {
     font-size: 1.2rem;
 }
 
-.tm-nav-item.current .tm-nav-link,
+/* .tm-nav-item.current .tm-nav-link,
 .tm-nav-link:hover {
     color: white;
     background-color: #CC9999;
-}
+} */
 
 @media (max-width: 1033px) {
     .tm-nav-item {

@@ -53,12 +53,25 @@
                 </nav>
             </div>
         </div>
-        <section class="tm-mb-1" id="View1">
 
-            <h1>50 Measurements types and values</h1>
-
-            <table id="view1tbl" class="Tabuler"></table>
-
+        <section class="tm-bg-color-4 tm-mb-3 tm-gallery-section" id="View3">
+            <h1 class="w3-text-grey"><b>Wind Direction and Values</b></h1>
+            <select id="view3_timeinterval">
+              <option value="view3_timeinterval_1">Now</option>
+              <option value="view3_timeinterval_2">24 hours</option>
+              <option value="view3_timeinterval_3">48 hours</option>
+              <option value="view3_timeinterval_4">72 hours</option>
+              <option value="view3_timeinterval_5">1 week</option>
+              <option value="view3_timeinterval_6">1 month</option>
+            <select>
+            
+        
+        <div id="view3_content_1">
+            
+          <h1 id="heading"></h1>
+           <table id="View3Tbl" class="Tabuler"></table>
+           <div id="view3_barchart" style="height: 500%;"></div>   
+      </div>
 
         </section>
 
@@ -66,7 +79,8 @@
     </div>
     
 
-    <script src="./js/Script.js"></script>
+    <script src="./js/Script3.js"></script>
+
 </body>
 
 </html>
