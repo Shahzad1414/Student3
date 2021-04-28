@@ -22,7 +22,7 @@
     <div class="container-fluid">
         <div class="tm-site-header tm-mb-1">
             <div class="tm-site-name-container tm-bg-color-1">
-                <img src="./img/logo.png" width="100%" />
+                <img src="./logo.png" width="100%" />
             </div>
             <div class="tm-nav-container tm-bg-color-8">
                 <nav class="tm-nav" id="tm-nav">
@@ -64,9 +64,17 @@
 
 
     </div>
-    
+
 
     <script src="./js/Script.js"></script>
+    <script src="./js/tsorter.min.js"></script>
+    <script>
+        function init() {
+            var sorter = tsorter.create('view1tbl');
+        }
+
+        window.onload = init;
+    </script>
 </body>
 
 </html>

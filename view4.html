@@ -22,7 +22,7 @@
     <div class="container-fluid">
         <div class="tm-site-header tm-mb-1">
             <div class="tm-site-name-container tm-bg-color-1">
-                <img src="./img/logo.png" width="100%" />
+                <img src="./logo.png" width="100%" />
             </div>
             <div class="tm-nav-container tm-bg-color-8">
                 <nav class="tm-nav" id="tm-nav">
@@ -55,10 +55,10 @@
         </div>
         <section class="tm-bg-color-5 tm-mb-3" id="View4">
             <h1 class="w3-wide">Four Different Weathers Type and Values</h1>
-      <p>Please Select Weather and Time Intervals</p>
-      
-      <div class="w3-row">
-        <select id="view4_Measurements">
+            <p>Please Select Weather and Time Intervals</p>
+
+            <div class="w3-row">
+                <select id="view4_Measurements">
           <option value="view4_Measurements_1">rain</option>
           <option value="view4_Measurements_2">wind_speed</option>
           <option value="view4_Measurements_3">light</option>
@@ -88,6 +88,14 @@
     </div>
 
     <script src="./js/script4.js"></script>
+    <script src="./js/tsorter.min.js"></script>
+    <script>
+    function init() {
+    var sorter = tsorter.create('View4Tbl');
+}
+    
+window.onload = init;
+    </script>
 </body>
 
 </html>
