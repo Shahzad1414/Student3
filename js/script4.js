@@ -12,7 +12,7 @@ $(document).ready(function() {
         type: 'GET',
         success: function(data) {
             $("#view4_content_1 #View4Tbl").empty();
-            $("#heading").text("latest 50 measurments and Types");
+            $("#heading").text("latest 25 measurments and Types");
 
 
             let tab =
@@ -27,7 +27,7 @@ $(document).ready(function() {
             for (let r of data) {
 
                 count = count + 1;
-                if (count <= 50) {
+                if (count <= 25) {
                     tab += `<tr> 
                     <td>${count} </td>
                     <td>${r.date_time.slice(0,10)}</td> 
@@ -81,7 +81,7 @@ $(document).ready(function() {
                         type: 'GET',
                         success: function(data) {
                             $("#view4_content_1 #View4Tbl").empty();
-                            $("#heading").text("latest 50 measurments and Types");
+                            $("#heading").text("latest 25 measurments and Types");
 
                             let tab =
                                 `<tr>
@@ -95,7 +95,7 @@ $(document).ready(function() {
                             for (let r of data) {
 
                                 count = count + 1;
-                                if (count <= 50) {
+                                if (count <= 25) {
                                     tab += `<tr> 
                                     <td>${count} </td>
                                     <td>${r.date_time.slice(0,10)}</td> 
@@ -441,7 +441,7 @@ $(document).ready(function() {
                         type: 'GET',
                         success: function(data) {
                             $("#view4_content_1 #View4Tbl").empty();
-                            $("#heading").text("latest 50 Measurments and Typs");
+                            $("#heading").text("latest 25 Measurments and Typs");
 
                             let tab =
                                 `<tr>
@@ -455,7 +455,7 @@ $(document).ready(function() {
                             for (let r of data) {
 
                                 count = count + 1;
-                                if (count <= 50) {
+                                if (count <= 25) {
                                     tab += `<tr> 
                                     <td>${count} </td>
                                     <td>${r.date_time.slice(0,10)}</td> 
@@ -800,7 +800,7 @@ $(document).ready(function() {
                         type: 'GET',
                         success: function(data) {
                             $("#view4_content_1 #View4Tbl").empty();
-                            $("#heading").text("latest 50 measurments and Types");
+                            $("#heading").text("latest 25 measurments and Types");
 
                             let tab =
                                 `<tr>
@@ -814,7 +814,7 @@ $(document).ready(function() {
                             for (let r of data) {
 
                                 count = count + 1;
-                                if (count <= 50) {
+                                if (count <= 25) {
                                     tab += `<tr> 
                                     <td>${count} </td>
                                     <td>${r.date_time.slice(0,10)}</td> 
@@ -1160,7 +1160,7 @@ $(document).ready(function() {
                         type: 'GET',
                         success: function(data) {
                             $("#view4_content_1 #View4Tbl").empty();
-                            $("#heading").text("latest 50 measurments and Type");
+                            $("#heading").text("latest 25 measurments and Type");
 
                             let tab =
                                 `<tr>
@@ -1174,7 +1174,7 @@ $(document).ready(function() {
                             for (let r of data) {
 
                                 count = count + 1;
-                                if (count <= 50) {
+                                if (count <= 25) {
                                     tab += `<tr> 
                                     <td>${count} </td>
                                     <td>${r.date_time.slice(0,10)}</td> 
@@ -1517,7 +1517,7 @@ $(document).ready(function() {
                         .then(res => res.json())
                         .then((out) => {
                             $("#content_1 #View4Tbl").empty();
-                            $("#heading").text("latest 50 measurements type");
+                            $("#heading").text("latest 25 measurements type");
                             let tab =
                                 `<tr>
               <th>Row_Number</th>
@@ -1532,7 +1532,7 @@ $(document).ready(function() {
                             for (let r of out) {
 
                                 count = count + 1;
-                                if (count <= 50) {
+                                if (count <= 25) {
                                     tab += `<tr> 
                         <td>${count} </td>
                         <td>${r.date_time.slice(0,10)}</td> 
